@@ -1,4 +1,5 @@
 import { SBSans } from "@/fonts";
+import FormWrapper from "@/components";
 import "./globals.css";
 
 export const metadata = {
@@ -13,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={SBSans.className}>{children}</body>
+      <body className={SBSans.className}>
+        <main>
+          <FormWrapper>{children}</FormWrapper>
+        </main>
+      </body>
     </html>
   );
 }
