@@ -1,5 +1,5 @@
 import { SBSans } from "@/fonts";
-import FormWrapper from "@/components";
+import { FormWrapper } from "@/components";
 import "./globals.css";
 
 export const metadata = {

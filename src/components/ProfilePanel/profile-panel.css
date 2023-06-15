@@ -1,0 +1,33 @@
+.profile {
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.profile__avatar {
+  margin-right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  line-height: 52px;
+  border-radius: 50%;
+  color: #212830;
+  background-color: #D5E4F7;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
