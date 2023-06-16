@@ -1,6 +1,6 @@
 import { SBSans } from "@/fonts";
 import { FormWrapper } from "@/components";
-import "./globals.css";
+import GlobalStyles from "./global-styles";
 
 export const metadata = {
   title: "Profile",
@@ -14,6 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
+      <GlobalStyles />
       <body className={SBSans.className}>
         <main>
           <FormWrapper>{children}</FormWrapper>

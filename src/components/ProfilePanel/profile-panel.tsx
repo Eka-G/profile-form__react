@@ -1,5 +1,5 @@
 import { ProfileLinksList } from "@/components";
-import "./profile-panel.css";
+import { StyledProfile, StyledAvatar, StyledName, StyledInfo } from "./styled";
 
 interface ProfileProps {
   initials: string;
@@ -17,20 +17,20 @@ function ProfilePanel({
   resumeLink,
 }: ProfileProps) {
   return (
-    <div className="profile">
-      <div className="profile__avatar">
+    <StyledProfile>
+      <StyledAvatar>
         <span>{initials}</span>
-      </div>
+      </StyledAvatar>
 
-      <div className="profile__info">
-        <span className="profile__name">{userName}</span>
+      <StyledInfo>
+        <StyledName>{userName}</StyledName>
         <ProfileLinksList
           telegramLink={telegramLink}
           gitHubLink={gitHubLink}
           resumeLink={resumeLink}
         />
-      </div>
-    </div>
+      </StyledInfo>
+    </StyledProfile>
   );
 }
 

@@ -1,12 +1,16 @@
-.profile {
+"use client";
+
+import styled from "styled-components";
+
+export const StyledProfile = styled.div`
   padding-bottom: 24px;
   display: flex;
   align-items: center;
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
+`;
 
-.profile__avatar {
+export const StyledAvatar = styled.div`
   margin-right: 24px;
   display: flex;
   justify-content: center;
@@ -17,17 +21,17 @@
   line-height: 52px;
   border-radius: 50%;
   color: #212830;
-  background-color: #D5E4F7;
-}
+  background-color: #d5e4f7;
+`;
 
-.profile__info {
+export const StyledInfo = styled.div`
   display: flex;
   flex-direction: column;
-}
+`;
 
-.profile__name {
+export const StyledName = styled.span`
   margin-bottom: 8px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 600;
-}
+`;

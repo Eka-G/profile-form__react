@@ -1,5 +1,4 @@
-import Image from "next/image";
-import "./profile-links-list.css";
+import { StyledList, StyledListItem, StyledListImg } from "./styled";
 
 interface ProfileLinksProps {
   telegramLink: string;
@@ -13,40 +12,22 @@ function ProfileLinksList({
   resumeLink,
 }: ProfileLinksProps) {
   return (
-    <ul className="profile__links">
-      <li className="profile__link">
-        <Image
-          src="/folder.svg"
-          width={13}
-          height={11}
-          alt="folder"
-          className="profile__link-img"
-        />
+    <StyledList>
+      <StyledListItem>
+        <StyledListImg src="/folder.svg" width={13} height={11} alt="folder" />
         <a href={telegramLink}>Telegram</a>
-      </li>
+      </StyledListItem>
 
-      <li className="profile__link">
-        <Image
-          src="/folder.svg"
-          width={13}
-          height={11}
-          alt="folder"
-          className="profile__link-img"
-        />
+      <StyledListItem>
+        <StyledListImg src="/folder.svg" width={13} height={11} alt="folder" />
         <a href={gitHubLink}>GitHub</a>
-      </li>
+      </StyledListItem>
 
-      <li className="profile__link">
-        <Image
-          src="/folder.svg"
-          width={13}
-          height={11}
-          alt="folder"
-          className="profile__link-img"
-        />
+      <StyledListItem>
+        <StyledListImg src="/folder.svg" width={13} height={11} alt="folder" />
         <a href={resumeLink}>Resume</a>
-      </li>
-    </ul>
+      </StyledListItem>
+    </StyledList>
   );
 }
 
