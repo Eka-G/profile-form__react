@@ -4,3 +4,5 @@ export { default as FormMain } from "./FormMain";
 export { default as FormWrapper } from "./FormWrapper";
 export { default as ProfileLinksList } from "./ProfileLinksList";
 export { default as ProfilePanel } from "./ProfilePanel";
+export { default as ProgressBar } from "./ProgressBar";
+export { default as ProgressStep } from "./ProgressStep";
