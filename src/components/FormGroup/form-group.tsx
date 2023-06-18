@@ -1,36 +1,20 @@
 "use client";
 
 import { type FieldAttributes, useField } from "formik";
-import {
-  StyledWrapper,
-  StyledLabel,
-  StyledInputMask,
-  StyledField,
-  StyledError,
-} from "./styled";
+import { StyledWrapper, StyledLabel, StyledError } from "./styled";
 
 type FormGroupProps = FieldAttributes<{
   label: string;
-  mask?: string | Array<string | RegExp>;
-  maskChar?: string | null | undefined;
 }>;
 
-const FormGroup = ({ label, mask, maskChar, ...props }: FormGroupProps) => {
-  const [field, meta] = useField(props);
+const FormGroup = ({ label, id, children, ...props }: FormGroupProps) => {
+  const [, meta] = useField(props);
 
   return (
     <StyledWrapper>
-      <StyledLabel htmlFor={props.name}>{label}</StyledLabel>
-      {mask ? (
-        <StyledInputMask
-          mask={mask}
-          maskChar={maskChar}
-          {...field}
-          {...props}
-        />
-      ) : (
-        <StyledField {...field} {...props} />
-      )}
+      <StyledLabel htmlFor={id}>{label}</StyledLabel>
+
+      {children}
 
       {meta.touched && meta.error ? (
         <StyledError>{meta.error}</StyledError>

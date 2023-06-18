@@ -1,5 +1,7 @@
 export { default as FormBtn } from "./FormBtn";
 export { default as FormGroup } from "./FormGroup";
+export { default as FormItemField } from "./FormItemField";
+export { default as FormItemMask } from "./FormItemMask";
 export { default as FormMain } from "./FormMain";
 export { default as FormWrapper } from "./FormWrapper";
 export { default as ProfileLinksList } from "./ProfileLinksList";

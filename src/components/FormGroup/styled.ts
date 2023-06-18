@@ -1,8 +1,6 @@
 "use client";
 
 import styled from "styled-components";
-import { Field } from "formik";
-import InputMask from "react-input-mask";
 
 export const StyledWrapper = styled.div`
   position: relative;
@@ -11,23 +9,8 @@ export const StyledWrapper = styled.div`
   flex-direction: column;
 `;
 
-const inputStyles = `
-  padding: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.16);
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.04);
-`;
-
 export const StyledLabel = styled.label`
   margin-bottom: 8px;
-`;
-
-export const StyledInputMask = styled(InputMask)`
-  ${inputStyles}
-`;
-
-export const StyledField = styled(Field)`
-  ${inputStyles}
 `;
 
 export const StyledError = styled.span`
