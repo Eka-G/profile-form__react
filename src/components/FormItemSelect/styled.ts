@@ -4,11 +4,7 @@ import styled from "styled-components";
 import { Field } from "formik";
 import { type Color, formItemStyles } from "@/shared";
 
-export const StyledField = styled(Field)<{ $bgColor: Color }>`
+export const StyledSelect = styled(Field)<{ $bgColor: Color }>`
   background-color: ${({ $bgColor }) => $bgColor};
   ${formItemStyles}
-`;
-
-export const StyledOption = styled.option<{ $bgColor?: Color }>`
-  background-color: ${({ $bgColor }) => $bgColor || "#ffffff"};
 `;
